@@ -10,7 +10,7 @@ from dash import html, dcc
 import plotly.express as px
 
 #Importamos el documento
-DTBpath= "data/DTBTraining.csv"
+DTBpath= 'data/DTBTraining.csv'
 CRUEpath = "data/CRUETraining.csv"
 Cornerspath = "data/corners.csv"
 
