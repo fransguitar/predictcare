@@ -15,8 +15,8 @@ MENU_STYLE = {
 
 userSection= dbc.Row(
     [
-        dbc.Col(html.A(html.Img(src='assets/static/bell.png', height='27px'), style= MENU_STYLE)),
-        dbc.Col(html.A(html.Img(src='assets/static/profile.png', height='40px'), style= MENU_STYLE)),
+        dbc.Col(html.A(html.Img(src='../assets/static/bell.png', height='27px'), style= MENU_STYLE)),
+        dbc.Col(html.A(html.Img(src='../assets/static/profile.png', height='40px'), style= MENU_STYLE)),
         
     ],
     className="g-0 ms-auto flex-nowrap mt-3 mt-md-0",
@@ -30,7 +30,7 @@ navBar = dbc.Navbar(
                 # Use row and col to control vertical alignment of logo / brand
                 dbc.Row(
                     [
-                        dbc.Col(html.A(html.Img(src='assets/static/uis-logo.svg', height='35px', id="btn_sidebar"), style= MENU_STYLE)),
+                        dbc.Col(html.A(html.Img(src='../assets/static/uis-logo.svg', height='35px', id="btn_sidebar"), style= MENU_STYLE)),
                         #dbc.Col(dbc.Button("Sidebar", outline=True, color="secondary", className="mr-1", id="btn_sidebar")),
                         dbc.Col(dbc.NavbarBrand("PredicCare", className="ms-2")),
                     ],
@@ -84,17 +84,17 @@ sidebar = html.Div(
         dbc.Nav(
             [
                 dbc.NavLink([
-                    html.A(html.Img(src='assets\static\home.png', height='25px', id="btn_sidebar"),style={"marginRight":"0.5rem"}),
+                    html.A(html.Img(src='../assets/static/home.png', height='25px', id="btn_sidebar"), style={"marginRight": "0.5rem"}),
                     "Home"
                 ], href="/page-1", id="page-1-link"),
                 
                 dbc.NavLink([
-                    html.A(html.Img(src='assets\static\dashboard.png', height='25px', id="btn_sidebar"),style={"marginRight":"0.5rem"}),
+                    html.A(html.Img(src='../assets/static/dashboard.png', height='25px', id="btn_sidebar"), style={"marginRight": "0.5rem"}),
                     "exploration"
                 ], href="/page-2", id="page-2-link"),
                 
                 dbc.NavLink([
-                    html.A(html.Img(src='assets\static\chart.png', height='25px', id="btn_sidebar"),style={"marginRight":"0.5rem"}),
+                    html.A(html.Img(src='../assets/static/chart.png', height='25px', id="btn_sidebar"), style={"marginRight": "0.5rem"}),
                     "Home"
                 ], href="/page-3", id="page-3-link"),
                 
