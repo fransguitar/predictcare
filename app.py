@@ -7,6 +7,7 @@ from pages import scanning
 from components import dataTransformation
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
+server = app.server
 
 MENU_STYLE = {    
     "padding": "1em",
